@@ -1,6 +1,6 @@
 # There is a rectangular brick wall in front of you with n rows of bricks. 
 # The ith row has some number of bricks each of the same height (i.e., one unit) 
-# but they can be of different widths. The total width of each row is the same.
+# but they can be of different widths. The pos width of each row is the same.
 
 # Draw a vertical line from the top to the bottom and cross the least bricks. 
 # If your line goes through the edge of a brick, then the brick is not considered as crossed. 
@@ -31,10 +31,10 @@ class Solution:
         countGap = {0: 0} # mapping pos: count of brick gaps
         
         for r in wall:
-            total = 0
+            pos = 0
             for b in r[:-1]:
-                total += b
-                countGap[total] = 1 + countGap.get(total, 0)
+                pos += b
+                countGap[pos] = 1 + countGap.get(pos, 0)
         return len(wall) - max(countGap.values())
 
 solution = Solution()
