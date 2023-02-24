@@ -39,4 +39,5 @@ class Solution:
             diff = target - n
             if diff in preMap:
                 return [preMap[diff], i]
-            preMap[n] = i 
+            preMap[n] = i
+        return
