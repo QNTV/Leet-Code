@@ -27,27 +27,21 @@
 #     url is guranteed to be a valid URL.
 
 class Codec:
-    def __init__(self):
-        self.encodeMap = {}
-        self.decodeMap = {}
-        self.base = "http://tinyurl.com/"
     
-    def encode(self, longUrl):
-        """Encodes a URL to a shortened URL.
-        """
-        if longUrl not in self.encodeMap:
-            shortUrl = self.base + str(len(self.encodeMap) + 1)
-            self.encodeMap[longUrl] = shortUrl
-            self.decodeMap[shortUrl] = longUrl        
-        return self.encodeMap[longUrl]
+    def encode(self, longUrl: strs) -> str:
+        res = ""
+        for s in strs:
+            res += str(len(s)) + "#" + s
+        return res
         
-
-    def decode(self, shortUrl):
-        """Decodes a shortened URL to its original URL.
-        """
-        return self.decodeMap[shortUrl]
-    
-url = "https://leetcode.com/problems/design-tinyurl"
-
-code = Codec()
-print(code.encode(url))
+    def decode(self, shortUrl: str) -> str:
+        res, i = [], 0
+        
+        while i < len(str):
+            j = i
+            while str[j] != "#":
+                j += 1
+            length = int(str(i:j))
+            res.append(str[j + 1 : j + 1 + length])
+            i = j + 1 + length
+        return res
