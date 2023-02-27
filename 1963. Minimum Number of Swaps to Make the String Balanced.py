@@ -39,24 +39,6 @@
 #     s[i] is either '[' or ']'.
 #     The number of opening brackets '[' equals n / 2, and the number of closing brackets ']' equals n / 2.
 
-<<<<<<< HEAD
-
-
-class Solution:
-    def minSwaps(self, s):
-        extraClose, maxClose = 0, 0
-        
-        for c in s:
-            if c == "[":
-                extraClose -= 1
-            else:
-                extraClose += 1
-                
-            maxClose = max(extraClose, maxClose)
-        return (max +1) // 2 # or math.ceil(maxClose / 2)
-    
-            
-=======
 class Solution:
    def minSwaps(self, s):
       close, maxClose = 0, 0
@@ -85,4 +67,3 @@ class Solution:
                 else:
                     stack_size += 1
         return (stack_size+1)//2
->>>>>>> 97cbca2ef620242e312f08078915fa28441dc88a
