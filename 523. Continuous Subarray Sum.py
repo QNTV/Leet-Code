@@ -33,7 +33,7 @@
 
 class Solution:
     def checkSubarraySum(self, nums: List[int], k: int) -> bool:
-        remainder = {0: -1}
+        remainder = {0: -1} # map remainder -> end index
         total = 0
         
         for i, n in enmuerate(nums):
