@@ -61,3 +61,35 @@ Solution = Solution()
 dominoes = ".L.R...LR..L.."
 
 print(Solution.pushDominoes(dominoes))
+
+
+class Solution:
+    def pushDominoes(self, dominoes: str) -> str:
+        # Two pointer
+        # d[i] == L and d[j] == R : no push
+        # d[i] == d[j] : push all
+        # d[i] == R and d[j] == L : push i->mid to R + [ . if mid is odd] + push j <- mid to L
+        
+        res = ""
+        prev = 'L'
+        dots = 0
+        dominoes += 'R'
+        for c in dominoes:
+            if c == '.':
+                dots += 1
+                continue
+            
+            if prev == c:
+                res += c * dots
+            elif prev == 'L' and c == 'R':
+                res += '.' * dots
+            else:
+                half = dots // 2
+                mid = '.' if dots % 2 else ""
+                res += 'R' * half + mid + 'L' * half
+            
+            res += c
+            dots = 0
+            prev = c
+
+        return res[:-1]
