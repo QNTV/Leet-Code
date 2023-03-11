@@ -47,7 +47,7 @@ class Solution:
             l, r = l + 1, r - 1
         return True
         
-        
-        (ord("A") <= ord(c) <= ord("Z") or
-         ord("a") <= ord(c) <= ord("z") or
-         ord("0") <= ord(c) <= ord("9"))
+    def alphaNum(self, c):
+        return (ord("A") <= ord(c) <= ord("Z") or
+                ord("a") <= ord(c) <= ord("z") or
+                ord("0") <= ord(c) <= ord("9"))
