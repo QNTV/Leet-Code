@@ -7,7 +7,11 @@
 #     It can be written as [C], where C is a balanced string.
 
 # You may swap the brackets at any two indices any number of times.
+<<<<<<< HEAD
+# Return the minimum number of swaps to make s balanced. 
+=======
 # Return the minimum number of swaps to make s balanced.
+>>>>>>> 97cbca2ef620242e312f08078915fa28441dc88a
 
 # Example 1:
 # Input: s = "][]["
