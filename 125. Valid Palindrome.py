@@ -35,7 +35,7 @@ class Solution:
 
 class Solution:
     def isPalindrome(self, s: str) -> bool:
-        l, r = o , len(s) - 1
+        l, r = 0 , len(s) - 1
         
         while l < r:
             while l < r and not self.alphaNum(s[l]):
@@ -51,3 +51,6 @@ class Solution:
         return (ord("A") <= ord(c) <= ord("Z") or
                 ord("a") <= ord(c) <= ord("z") or
                 ord("0") <= ord(c) <= ord("9"))
+sol = Solution()
+s = "race a car"
+print(sol.isPalindrome(s))
