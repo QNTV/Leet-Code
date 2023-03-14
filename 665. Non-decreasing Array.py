@@ -20,7 +20,7 @@
 #     -105 <= nums[i] <= 105
 
 class Solution:
-    def checkPossibility(self, nums: List[int]) -> bool:
+    def checkPossibility(self, nums) -> bool:
         changed = False
         
         for i in range(len(nums) - 1):
@@ -35,4 +35,8 @@ class Solution:
                 nums[i + 1] = nums[i]
             changed = True
         return True
-                
+               
+               
+Sol = Solution()
+nums =  [4,2,1]
+print(Sol.checkPossibility(nums))
