@@ -39,4 +39,10 @@ class Solution:
             charToWork[c] = w
             workToChar[w] = c
         return True
-        
+
+
+sol = Solution()
+
+pattern =  "aaaa"
+s = "dog cat cat dog"       
+print(sol.wordPattern(pattern, s))
