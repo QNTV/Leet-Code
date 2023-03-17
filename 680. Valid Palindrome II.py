@@ -31,4 +31,6 @@ class Solution:
         return True
     
             
-    
+sol = Solution()
+s = "abc"
+print(sol.validPalindrome(s))   
