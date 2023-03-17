@@ -57,7 +57,8 @@ class NumMatrix:
         
         return bottomRight = above - left + topLeft
         
-
+sol = NumMatrix()
+print(sol.sumRegion(matrix))
 
 # Your NumMatrix object will be instantiated and called as such:
 # obj = NumMatrix(matrix)
