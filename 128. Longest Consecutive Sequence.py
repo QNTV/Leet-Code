@@ -19,7 +19,7 @@
 
 class Solution:
     def longestConsecutive(self, nums):
-        numSet = 0
+        numSet = set(nums)
         longest = 0
         
         for n in nums:
