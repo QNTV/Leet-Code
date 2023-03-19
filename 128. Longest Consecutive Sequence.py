@@ -18,7 +18,7 @@
 
 
 class Solution:
-    def longestConsecutive(self, nums: List[int]) -> int:
+    def longestConsecutive(self, nums):
         numSet = 0
         longest = 0
         
@@ -30,3 +30,7 @@ class Solution:
                     length += 1
                 longest = max(length, longest)
             return longest
+
+sol = Solution()
+nums = [0,3,7,2,5,8,4,6,0,1]
+print(sol.longestConsecutive(nums))
