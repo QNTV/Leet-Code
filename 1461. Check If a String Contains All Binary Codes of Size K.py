@@ -29,3 +29,9 @@ class Solution:
         for i in range(len(s) - k + 1):
             codeSet.add(s[i: i + k])
         return len(codeSet) == 2 ** k
+    
+sol = Solution()
+s = "00110110"
+k = 2
+
+print(sol.hasAllCodes(s, k))
