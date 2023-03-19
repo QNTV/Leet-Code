@@ -30,7 +30,7 @@
 
 
 class Solution:
-    def findPeakElement(self, nums: List[int]) -> int:
+    def findPeakElement(self, nums):
         
         left = 0
         right = len(nums) - 1
@@ -47,6 +47,11 @@ class Solution:
             
         if left == right:
             return left
-#
+
+
+sol = Solution()
+nums =[1,2,1,3,5,6,4]
+
+print(sol.findPeakElement(nums))
         
         
