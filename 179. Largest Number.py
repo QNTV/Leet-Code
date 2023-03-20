@@ -16,7 +16,7 @@
 #     0 <= nums[i] <= 109
 
 class Solution:
-    def largestNumber(self, nums: List[int]) -> str:
+    def largestNumber(self, nums):
         for i, n in enumerate(nums):
             nums[i] = str(n)
             
@@ -27,3 +27,7 @@ class Solution:
                 return 1
         nums = sorted(nums, key=cmp_to_key(compare))
         return str(int("".join(nums)))
+    
+sol = Solution()
+nums =[3,30,34,5,9]
+print(sol.largestNumber(nums))
