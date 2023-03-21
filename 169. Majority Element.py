@@ -18,7 +18,7 @@
 
 
 class Solution:
-    def majorityElement(self, nums: List[int]) -> int:
+    def majorityElement(self, nums):
         res, count = 0, 0
         
         for n in nums:
@@ -30,7 +30,7 @@ class Solution:
 
 
 class Solution:
-    def majorityElement(self, nums: List[int]) -> int:
+    def majorityElement(self, nums):
         count = {}
         res, maxCount = 0 , 0
         
@@ -40,4 +40,7 @@ class Solution:
             maxCount = max(count[n], maxCount)
         return res
             
-        
+
+sol = Solution()
+nums = [2,2,1,1,1,2,2]
+print(sol.majorityElement(nums)) 
