@@ -19,7 +19,7 @@
 # Follow up: Your algorithm's time complexity must be better than O(n log n), where n is the array's size.
 
 class Solution:
-    def topKFrequent(self, nums: List[int], k: int) -> List[int]:
+    def topKFrequent(self, nums, k):
         count = {}
         freq = [[] for i in range(len(nums) + 1) ]
         
@@ -35,4 +35,9 @@ class Solution:
                 if len(res) == k:
                     return res
                 
-    
+sol = Solution()
+
+nums = [1,1,1,2,2,3]
+k = 2
+
+print(sol.topKFrequent(nums, k)) 
