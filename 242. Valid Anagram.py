@@ -21,7 +21,7 @@
 
 
 class Solution:
-    def isAnagram(self, s: str, t: str) -> bool:
+    def isAnagram(self, s, t):
         
         if len(s) != len(t):
             False
@@ -37,3 +37,7 @@ class Solution:
         return True
     
 
+sol = Solution()
+s = "anagram"
+t = "nagaram"
+print(sol.isAnagram(s, t))
