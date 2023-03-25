@@ -38,7 +38,7 @@ class Solution:
         while left < right:
             mid = (right - left)//2 + left
             
-            print(mid, left, right)
+            print(left, mid, right)
             
             if nums[mid] > nums[mid + 1]:
                 right = mid
