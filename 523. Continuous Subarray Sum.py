@@ -32,11 +32,11 @@
 #     1 <= k <= 231 - 1
 
 class Solution:
-    def checkSubarraySum(self, nums: List[int], k: int) -> bool:
+    def checkSubarraySum(self, nums, k):
         remainder = {0: -1} # map remainder -> end index
         total = 0
         
-        for i, n in enmuerate(nums):
+        for i, n in enumerate(nums):
             total += n
             r = total % k
             if r not in remainder:
@@ -44,4 +44,8 @@ class Solution:
             elif i - remainder[r] > 1:
                 return True
         return False
-            
+
+sol = Solution()
+nums = [23,2,6,4,7]
+k = 13
+print(sol.checkSubarraySum(nums, k))
