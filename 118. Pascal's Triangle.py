@@ -49,5 +49,5 @@ class Solution:
 
 
 sol = Solution()
-
-print(sol.getAllRow())
+numRows = 5
+print(sol.getAllRow(numRows))
