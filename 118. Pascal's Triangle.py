@@ -48,3 +48,6 @@ class Solution:
         return ListPrec
 
 
+sol = Solution()
+
+print(sol.getAllRow())
