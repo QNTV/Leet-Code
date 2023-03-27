@@ -30,4 +30,8 @@ class Solution:
                (i % 2 == 0 and nums[i] > nums[i -1])):
                 nums[i] , nums[i - 1] = nums[i - 1], nums[i]
         return nums        
-        
+       
+       
+sol = Solution()
+
+print(sol.wiggle_sort(nums)) 
