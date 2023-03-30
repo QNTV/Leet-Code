@@ -40,3 +40,7 @@ class Solution:
                s[l], s[r] = s[r], s[l]
                reverse(l + 1, r - 1)
         reverse(0, len(s) - 1) 
+        
+sol = Solution()
+s = ["h","e","l","l","o"]
+print(sol.reverseString(s))
