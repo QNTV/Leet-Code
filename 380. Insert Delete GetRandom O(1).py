@@ -59,7 +59,12 @@ class RandomizedSet:
 
     def getRandom(self) -> int:
         return random.choice(self.numList)
-        
+       
+       
+sol = RandomizedSet()
+val = ["RandomizedSet", "insert", "remove", "insert", "getRandom", "remove", "insert", "getRandom"]
+# [[], [1], [2], [2], [], [1], [2], []]
+print(sol.getRandom(val)) 
 
 
 # Your RandomizedSet object will be instantiated and called as such:
