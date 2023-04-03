@@ -38,7 +38,7 @@
 
 
 class Solution:
-    def pivotIndex(self, nums: List[int]) -> int:
+    def pivotIndex(self, nums):
         total = sum(nums)
 
         leftSum = 0
@@ -48,3 +48,7 @@ class Solution:
                 return i
             leftSum += nums[i]
         return -1
+
+sol = Solution()
+nums = [1,2,3]
+print(sol.pivotIndex(nums))
