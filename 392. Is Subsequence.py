@@ -29,3 +29,7 @@ class Solution:
                 i += 1
             j += 1
         return i == len(s)
+sol = Solution()
+s = "abc"
+t = "ahbgdc"
+print(sol.isSubsequence(s, t))
