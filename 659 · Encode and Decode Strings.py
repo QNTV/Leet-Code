@@ -38,3 +38,7 @@ class Codec:
             res.append(str[j + 1 : j + 1 + length])
             i = j + 1 + length
         return res
+    
+sol = Codec()
+longUrl =["we", "say", ":", "yes"]
+print(sol.decode(longUrl))
