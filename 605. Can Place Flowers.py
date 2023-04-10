@@ -46,3 +46,9 @@ class Solution:
                 f[i] = 1
                 n -= 1
         return n <= 0
+
+sol = Solution()
+
+flowerbed = [1,0,0,0,1]
+n = 2
+print(sol.canPlaceFlowers(flowerbed, n))
