@@ -93,3 +93,8 @@ class Solution:
             prev = c
 
         return res[:-1]
+
+
+sol = Solution()
+
+print(sol.pushDominoes(dominoes))
