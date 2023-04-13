@@ -31,7 +31,10 @@ class Solution:
                 nums[i] , nums[i - 1] = nums[i - 1], nums[i]
         return nums        
        
-       
+      
+      
+      
+ 
 sol = Solution()
 nums = [3, 5, 2, 1, 6, 4]
 print(sol.wiggle_sort(nums)) 
