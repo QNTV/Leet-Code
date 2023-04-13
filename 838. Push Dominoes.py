@@ -96,5 +96,5 @@ class Solution:
 
 
 sol = Solution()
-
+dominoes = ".L.R...LR..L.."
 print(sol.pushDominoes(dominoes))
