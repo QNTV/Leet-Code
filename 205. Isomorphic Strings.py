@@ -26,3 +26,8 @@
 class Solution:
     def isIsomorphic(self, s: str, t: str) -> bool:
         s, t = {}, {}
+
+
+sol = Solution()
+
+print(sol.isIsomorphic(r, t)
