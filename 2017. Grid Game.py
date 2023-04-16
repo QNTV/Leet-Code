@@ -72,6 +72,10 @@ class Solution:
         else: return res
         return min(res, tot2)            
 
+
+
 sol = Solution()
+
 grid = [[1,3,1,15],[1,3,3,1]]
+
 print(sol.gridGame(grid))
