@@ -41,3 +41,8 @@ class Solution:
             if c > 1:
                 res += (c * (c - 1)) // 2
         return res
+    
+sol = Solution()
+rectangles = [[4,8],[3,6],[10,20],[15,30]]
+
+print(sol.interchangeableRectangles(rectangles))

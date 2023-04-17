@@ -60,7 +60,7 @@ class Solution:
 
 
 class Solution:
-    def gridGame(self, grid: List[List[int]]) -> int:
+    def gridGame(self, grid):
         tot1 = sum(grid[0]) - grid[0][0]
         tot2 = 0
         res = tot1
@@ -71,3 +71,11 @@ class Solution:
             res = tot1
         else: return res
         return min(res, tot2)            
+
+
+
+sol = Solution()
+
+grid = [[1,3,1,15],[1,3,3,1]]
+
+print(sol.gridGame(grid))
