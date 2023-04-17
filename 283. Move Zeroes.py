@@ -17,3 +17,9 @@
  
 # Follow up: Could you minimize the total number of operations done?
 
+class Solution:
+    def moveZeroes(self, nums):
+        """
+        Do not return anything, modify nums in-place instead.
+        """
+        
