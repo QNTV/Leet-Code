@@ -62,7 +62,9 @@ class RandomizedSet:
        
        
 sol = RandomizedSet()
+
 val = ["RandomizedSet", "insert", "remove", "insert", "getRandom", "remove", "insert", "getRandom"]
+
 # [[], [1], [2], [2], [], [1], [2], []]
 print(sol.getRandom(val)) 
 
