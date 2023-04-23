@@ -21,7 +21,7 @@
 #     text consists of lower case English letters only.
 
 class Solution:
-    def maxNumberOfBalloons(self, text: str) -> int:
+    def maxNumberOfBalloons(self, text):
         countText = Counter(text)
         balloon = Counter('balloon')
         
@@ -29,3 +29,7 @@ class Solution:
         for c in balloon:
             res = min(res, countText[c] // balloon[c])
         return res
+    
+sol = Solution()
+text = "leetcode"
+print(sol.maxNumberOfBalloons(text))
