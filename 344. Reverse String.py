@@ -14,6 +14,7 @@
 #     s[i] is a printable ascii character.
 
 
+
 class Solution:
     def reverseString(self, s):
        l, r = 0, len(s) - 1
@@ -21,8 +22,7 @@ class Solution:
            s[l], s[r] = s[r], s[l]
            l, r = l + 1, r - 1
            
-
-
+           
 class Solution:
     def reverseString(self, s):
         stack = []
@@ -32,6 +32,7 @@ class Solution:
         while stack:
             s[i] = stack.pop()
             i += 1
+           
             
 class Solution:
     def reverseString(self, s):
