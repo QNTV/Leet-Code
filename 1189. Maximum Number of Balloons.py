@@ -31,5 +31,7 @@ class Solution:
         return res
     
 sol = Solution()
+
 text = "leetcode"
+
 print(sol.maxNumberOfBalloons(text))
