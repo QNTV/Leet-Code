@@ -25,3 +25,7 @@
 #     1 <= nums.length <= 200
 #     -109 <= nums[i] <= 109
 #     -109 <= target <= 10
+
+
+class Solution:
+    def fourSum(self, nums, target):
