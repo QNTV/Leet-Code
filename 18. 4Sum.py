@@ -54,6 +54,9 @@ class Solution:
         findNsum(0, len(nums)-1, target, 4, [], results)
         return results
 
+
+
+
 sol = Solution()
 nums = [1,0,-1,0,-2,2]
 target = 5
