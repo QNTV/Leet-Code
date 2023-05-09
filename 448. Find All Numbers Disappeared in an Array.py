@@ -58,4 +58,9 @@ class Solution:
 
 # Explanation:
 # After first loop: nums = [-4,-3,-2,-7,8,2,-3,-1]
-# After second loop: res = [5,6] (indices of positive elements plus one)        
+# After second loop: res = [5,6] (indices of positive elements plus one)       
+
+
+sol = Solution()
+
+print(sol.findDisappearedNumbers(nums)) 

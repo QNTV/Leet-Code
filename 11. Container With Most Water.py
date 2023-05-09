@@ -39,5 +39,6 @@ class Solution:
         return res 
     
 sol = Solution()
+height = [0,5,8,9,7,4,1,4,8]
 
 print(sol.maxArea([1,8,6,2,5,4,8,3,7]))
