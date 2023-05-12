@@ -7,11 +7,7 @@
 #     It can be written as [C], where C is a balanced string.
 
 # You may swap the brackets at any two indices any number of times.
-<<<<<<< HEAD
 # Return the minimum number of swaps to make s balanced. 
-=======
-# Return the minimum number of swaps to make s balanced.
->>>>>>> 97cbca2ef620242e312f08078915fa28441dc88a
 
 # Example 1:
 # Input: s = "][]["
@@ -40,9 +36,8 @@
 #     The number of opening brackets '[' equals n / 2, and the number of closing brackets ']' equals n / 2.
 
 class Solution:
-   def minSwaps(self, s):
-      close, maxClose = 0, 0
-        
+    def minSwaps(self, s):
+    close, maxClose = 0, 0        
     for c in s:
         if c == "[":
             close -= 1            
@@ -67,3 +62,7 @@ class Solution:
                 else:
                     stack_size += 1
         return (stack_size+1)//2
+
+sol = Solution()
+s = "]]][[["
+print(sol.minSwaps(s))
