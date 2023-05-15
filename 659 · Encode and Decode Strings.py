@@ -40,5 +40,7 @@ class Codec:
         return res
     
 sol = Codec()
+
 longUrl =["we", "say", ":", "yes"]
+
 print(sol.decode(longUrl))
