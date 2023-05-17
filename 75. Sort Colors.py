@@ -23,7 +23,7 @@
 # Follow up: Could you come up with a one-pass algorithm using only constant extra space?
 
 class Solution:
-    def sortColor(self, nums: List[int]) -> None:
+    def sortColor(self, nums):
         l, r = 0, len(nums) - 1
         i = 0
         
@@ -41,3 +41,9 @@ class Solution:
                 r -= 1
                 i -=1
             i += 1
+            
+sol = Solution()
+
+nums = [2,0,2,1,1,0]
+
+print(sol.sortColor(nums))
