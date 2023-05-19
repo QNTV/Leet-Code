@@ -50,4 +50,35 @@
 
 class Solution:
     def removeElement(self, nums, val):
-        
+        """
+
+
+           nums: The input array.
+            val: The value to remove.
+
+        Returns:
+            The number of elements remaining in nums after the removal.
+        """
+
+        # Initialize the index of the next element to be processed.
+        i = 0
+
+        # Iterate over the elements of nums.
+        for j in range(len(nums)):
+
+            # If the current element is not equal to val,
+            # then copy it to the next available position in nums.
+            if nums[j] != val:
+                nums[i] = nums[j]
+                i += 1
+
+        # Return the number of elements remaining in nums.
+        return i
+
+
+sol = Solution()
+
+nums = [3, 2, 2, 3]
+val = 3
+
+print(sol.removeElement(nums, val)) 
