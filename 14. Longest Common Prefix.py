@@ -21,7 +21,7 @@
 
 
 class Solution:
-    def longestCommonPrefix(self, strs: List[str]) -> str:
+    def longestCommonPrefix(self, strs):
         res = ""
         for i in range(len(strs[0])):
             for s in strs:
@@ -29,3 +29,10 @@ class Solution:
                     return res
             res += strs[0][i]
         return res
+
+
+sol = Solution()
+
+strs = ["flower", "flow", "flight"]
+
+print(sol.longestCommonPrefix(strs))
