@@ -45,3 +45,10 @@ class Solution:
             if sCount == pCount:
                 res.append(l)
         return res
+    
+sol = Solution()
+
+s = "cbaebabacd"
+p = "abc"
+
+print(sol.findAnagrams(s, p))
