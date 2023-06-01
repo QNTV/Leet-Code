@@ -38,5 +38,7 @@ class Solution:
                
                
 Sol = Solution()
+
 nums =  [4,2,1]
+
 print(Sol.checkPossibility(nums))
