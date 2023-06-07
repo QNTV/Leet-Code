@@ -64,5 +64,7 @@ class Solution:
         return (stack_size+1)//2
 
 sol = Solution()
+
 s = "]]][[["
+
 print(sol.minSwaps(s))
