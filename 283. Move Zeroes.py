@@ -30,5 +30,7 @@ class Solution:
         return nums
         
 sol = Solution()
+
 nums = [1,6,0,5,4,6]
+
 print(sol.moveZeroes([0,1,0,3,12])) 
