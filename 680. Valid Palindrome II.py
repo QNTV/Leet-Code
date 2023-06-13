@@ -32,5 +32,7 @@ class Solution:
     
             
 sol = Solution()
+
 s = "abc"
+
 print(sol.validPalindrome(s))   

@@ -37,4 +37,23 @@
 # Follow up: Could you find an O(nums1.length + nums2.length) solution?
 
 class Solution:
-    def nextGreaterElement(self, nums1: List[int], nums2: List[int]) -> List[int]:
+    def nextGreaterElement(self, nums1, nums2):
+        stack = []
+        dic = {}
+        
+        for num in nums2:
+            while stack and stack[-1] < num:
+                dic[stack.pop()] = num
+            stack.append(num)
+            
+        while stack:
+            dic[stack.pop()] = -1
+            
+        return [dic[num] for num in nums1]
+    
+sol = Solution()
+
+nums1 = [4,1,2]
+nums2 = [1,3,4,2]
+
+print(sol.nextGreaterElement(nums1, nums2))

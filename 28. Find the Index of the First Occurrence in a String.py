@@ -124,3 +124,11 @@ class Solution:
                 return i-m+1
         
         return -1
+
+
+sol = Solution()
+
+haystack = "sadbutsad"
+needle = "sad"
+
+print(sol.strStr(haystack, needle))

@@ -24,7 +24,7 @@
 
 
 class Solution:
-    def groupAnagrams(self, strs: List[str]) -> List[List[str]]:
+    def groupAnagrams(self, strs):
         ans = collections.defaultdict(list)
         
         for s in strs:
@@ -33,3 +33,9 @@ class Solution:
                 count[ord(c) - ord("a")] += 1
             ans[tuple(count)].append(s)
         return ans.values()
+    
+sol = Solution()
+
+strs = ["eat","tea","tan","ate","nat","bat"]
+
+print(sol.groupAnagrams(strs))

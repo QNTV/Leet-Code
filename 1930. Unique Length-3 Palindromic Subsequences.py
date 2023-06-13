@@ -35,23 +35,9 @@
 #     3 <= s.length <= 105
 #     s consists of only lowercase English letters.
 
-solution 1:
-class Solution(object):
-    def countPalindromicSubsequence(self, s):
-        d=defaultdict(list)
-        for i,c in enumerate(s):
-            d[c].append(i)
-        ans=0
-        for el in d:
-            if len(d[el])<2:
-                continue
-            a=d[el][0]
-            b=d[el][-1]
-            ans+=len(set(s[a+1:b]))
-        return(ans)
-solution 2:
+
 class Solution:
-    def countPalindromicSubsequence(self, s: str) -> int:
+    def countPalindromicSubsequence(self, s):
 # Solutions
 
         # Palindromes will be in the format *_*
@@ -64,3 +50,9 @@ class Solution:
             if i > -1:
                 result += len(set(s[i + 1:j]))
         return result
+    
+sol = Solution()
+ 
+s = "aaaabbbbffjeefccdd"
+
+print(sol.countPalindromicSubsequence(s))
