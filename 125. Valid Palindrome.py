@@ -52,5 +52,7 @@ class Solution:
                 ord("a") <= ord(c) <= ord("z") or
                 ord("0") <= ord(c) <= ord("9"))
 sol = Solution()
+
 s = "race a car"
+
 print(sol.isPalindrome(s))
