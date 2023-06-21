@@ -37,3 +37,6 @@ class NumArray:
         return self.prefix_sums[right + 1] - self.prefix_sums[left]
 
 
+sol = NumArray()
+
+print(sol.sumRange(0, 2))
