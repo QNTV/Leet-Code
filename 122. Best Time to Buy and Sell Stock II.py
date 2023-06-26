@@ -40,8 +40,6 @@ class Solution:
         return profit                   
         
 solution = Solution()
-
-# prices = [7,1,5,3,6,4]
 prices = [1,2,3,4,5,6,7,8,5,8,4,5,5,4,9]
 
 print(solution.maxProfit(prices))
