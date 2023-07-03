@@ -55,12 +55,9 @@ class Solution:
         return results
 
 
-
-
 sol = Solution()
 
 nums = [1,0,-1,0,-2,2]
-
 target = 5
 
 print(sol.fourSum(nums, target)) 
