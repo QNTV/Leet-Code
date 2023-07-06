@@ -36,8 +36,10 @@ class Solution:
         return
     
 nums = [1,4,10,-3]
+
 target = 14
 solution = Solution()
+
 print(solution.twoSum(nums,target))
 
     
