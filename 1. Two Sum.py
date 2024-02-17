@@ -41,3 +41,13 @@ solution = Solution()
 print(solution.twoSum(nums,target))
 
     
+class Solution:
+    def twosum(self, nums, target):
+        preMap = {}
+        for i, n in enumerate(nums):
+            diff = target - n
+            if diff in preMap:
+                return [preMap[diff], i]
+            preMap[n] = i
+        return
+
