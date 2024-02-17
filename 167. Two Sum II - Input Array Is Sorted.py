@@ -47,7 +47,9 @@ class Solution:
                 return(l + 1, r + 1)
         return []
    
-sol = Solution()   
+sol = Solution()  
+ 
 numbers = [2,3,4]
 target = 6
+
 print(sol.twoSum(numbers, target))

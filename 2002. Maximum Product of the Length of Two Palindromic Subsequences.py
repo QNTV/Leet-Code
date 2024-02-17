@@ -79,5 +79,7 @@ class Solution:
 
         
 solution = Solution()
+
 s = "accbcaxxcxx"
+
 print(solution.maxProduct(s))

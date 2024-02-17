@@ -38,6 +38,8 @@ class Solution:
     
 
 sol = Solution()
+
 s = "anagram"
 t = "nagaram"
+
 print(sol.isAnagram(s, t))

@@ -45,4 +45,5 @@ sol = Solution()
 
 pattern =  "aaaa"
 s = "dog cat cat dog"       
+
 print(sol.wordPattern(pattern, s))
